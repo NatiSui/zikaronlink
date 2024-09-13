@@ -1,0 +1,103 @@
+
+:root {
+    --delft-blue: #2c3850ff;
+    --jet: #343232ff;
+    --timberwolf: #d1c4beff;
+    --paynes-gray: #315970ff;
+    --antiflash-white: #eceeedff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6; 
+    background-color: var(--antiflash-white); 
+}
+
+
+header {
+    background-color: var(--delft-blue); 
+    color: var(--antiflash-white); 
+    padding: 10px 20px; 
+}
+
+
+nav {
+    display: flex;
+    justify-content: center; 
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; 
+}
+
+nav ul li {
+    position: relative; 
+    margin: 0 15px; 
+}
+
+nav ul li a {
+    color: var(--antiflash-white); 
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    padding: 8px 12px; 
+}
+
+nav ul li a:hover {
+    background-color: var(--paynes-gray);
+    text-decoration: underline; 
+}
+
+
+nav ul ul {
+    display: none; 
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    background-color: var(--delft-blue); 
+    padding: 0;
+    list-style: none;
+    z-index: 1000; 
+}
+
+nav ul ul li {
+    margin: 0; 
+}
+
+nav ul ul li a {
+    padding: 10px 15px; 
+}
+
+nav ul li:hover > ul {
+    display: block; 
+}
+
+nav ul ul li a:hover {
+    background-color: var(--paynes-gray); 
+}
+
+
+main {
+    max-width: 1200px; 
+    margin: 20px auto; 
+    padding: 0 20px; 
+}
+
+/* Section styling */
+section {
+    margin-bottom: 20px; 
+}
+
+section h1, section h2 {
+    margin-top: 0;
+    margin-bottom: 10px; 
+}
+
+section p {
+    margin-bottom: 10px; 
+}
